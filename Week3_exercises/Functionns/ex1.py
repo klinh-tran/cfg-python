@@ -13,9 +13,9 @@ def guess_number():
     guess_no = 0
     while(guess_no != chosen_no):
         guess_no = int(input("Guess the number (1-10): "))
-        if guess_no > chosen_no:
+        if (guess_no > chosen_no):
             print("Retry. Your number is too high :(")
-        else:
+        elif (guess_no < chosen_no):
             print("Retry. Your number is too low :(")
         
     print("Correct! The chosen number is", guess_no)
