@@ -11,8 +11,7 @@ lst = []
 while len(lst)<10:
     number = int(input('Enter a number: '))
     if number <10:
-        rdm = random.randint(1,20)
-        lst.append(rdm*3)
+        lst.append(number*3)
     else:
         lst.append(number)
     print(f'Sum of the current list: {sum(lst)}')
